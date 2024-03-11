@@ -326,3 +326,72 @@ ul
 .Copyright{
     text-align: center;
 }
+
+
+@media only screen and (max-width: 600px) {
+    /* Điều chỉnh padding cho .container và .small-container */
+    .container,
+    .small-container {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    /* Điều chỉnh font-size cho toàn bộ trang */
+    body {
+        font-size: 14px;
+    }
+
+    /* Điều chỉnh kích thước logo */
+    .logo img {
+        width: 100px; /* Thay đổi kích thước logo cho phù hợp với màn hình nhỏ hơn */
+    }
+
+    /* Điều chỉnh kích thước ảnh trong phần giới thiệu */
+    .col-2 img {
+        max-width: 100%; /* Đảm bảo ảnh không tràn ra ngoài màn hình */
+        height: auto; /* Đảm bảo tỷ lệ chiều cao/tỉ lệ chiều rộng được bảo toàn */
+        margin-top: 20px; /* Tăng khoảng cách giữa ảnh và tiêu đề */
+    }
+
+    /* Điều chỉnh kích thước button */
+    .btn {
+        padding: 10px 20px; /* Tăng kích thước nút để dễ nhấn trên màn hình nhỏ */
+        font-size: 14px; /* Điều chỉnh font-size */
+    }
+
+    /* Điều chỉnh kích thước cột trong phần sản phẩm nổi bật */
+    .col-4 {
+        flex-basis: 50%; /* Hiển thị 2 cột trên một hàng */
+        max-width: 50%; /* Đảm bảo không bị tràn ra ngoài */
+    }
+
+    /* Điều chỉnh kích thước ảnh sản phẩm */
+    .col-4 img {
+        max-width: 100%; /* Đảm bảo ảnh không tràn ra ngoài màn hình */
+        height: auto; /* Đảm bảo tỷ lệ chiều cao/tỉ lệ chiều rộng được bảo toàn */
+    }
+
+    /* Điều chỉnh kích thước cột trong phần thương hiệu */
+    .brands .col-5 {
+        width: 25%; /* Hiển thị 4 thương hiệu trên một hàng */
+        max-width: 25%; /* Đảm bảo không bị tràn ra ngoài */
+    }
+
+    /* Điều chỉnh kích thước ảnh thương hiệu */
+    .brands .col-5 img {
+        max-width: 100%; /* Đảm bảo ảnh không tràn ra ngoài màn hình */
+        height: auto; /* Đảm bảo tỷ lệ chiều cao/tỉ lệ chiều rộng được bảo toàn */
+    }
+
+    /* Điều chỉnh kích thước ảnh chứng nhận */
+    .testimonial .col-3 img {
+        width: 80px; /* Thay đổi kích thước ảnh chứng nhận */
+        height: 80px;
+        border-radius: 50%; /* Làm tròn ảnh */
+    }
+
+    /* Điều chỉnh kích thước icon chứng nhận */
+    .testimonial .color-icon {
+        font-size: 18px;
+    }
+}
